@@ -1,3 +1,9 @@
 export async function GET(request) {
-    return new Response(JSON.stringify("hello, api get about page"))
+    const Users = [
+        {name: "Matthew", age: 31}, 
+        {name: "antoine", age: 5}
+
+
+    ]
+    return new Response(JSON.stringify(Users))
 }
